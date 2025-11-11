@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FocusMate — Progress</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">FocusMate</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="progress.html">Progress</a>
+      <a href="login.html" id="navLogin">Login</a>
+    </nav>
+  </header>
+
+  <main class="wrap dashboard">
+    <aside class="sidebar card">
+      <h3>Dashboard</h3>
+      <p id="sideUser">Not logged in</p>
+      <div class="stat">
+        <div class="stat-num" id="statDays">0</div>
+        <div class="stat-label">Days logged</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" id="statAvg">0</div>
+        <div class="stat-label">Avg Focus</div>
+      </div>
+      <div style="margin-top:12px;">
+        <button class="btn" id="addSample">Add Sample Entry</button>
+        <button class="btn ghost" id="exportData">Export CSV</button>
+      </div>
+    </aside>
+
+    <section class="main-panel">
+      <div class="card">
+        <h2>New Entry</h2>
+        <div class="form-grid">
+          <input id="subj" placeholder="Subject / Topic" />
+          <input id="minutes" type="number" min="1" placeholder="Minutes" />
+          <input id="focusLevel" type="number" min="0" max="10" value="7" />
+          <input id="mistakes" placeholder="Mistakes (what went wrong)" />
+          <input id="remark" placeholder="Your remark (what went well, plan)" />
+        </div>
+        <div style="margin-top:10px;">
+          <button class="btn" id="saveEntry">Save Entry</button>
+          <button class="btn ghost" id="autoRemark">Generate Suggestion</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Monthly Progress</h2>
+        <canvas id="progressChart" width="800" height="220"></canvas>
+      </div>
+
+      <div class="card">
+        <h2>Entries Table</h2>
+        <div class="table-wrap">
+          <table id="entriesTable">
+            <thead>
+              <tr><th>Date</th><th>Subject</th><th>Minutes</th><th>Focus</th><th>Mistakes</th><th>Remark</th><th>Suggestion</th><th>Actions</th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>FocusMate • Track your growth</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

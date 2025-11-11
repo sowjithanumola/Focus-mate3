@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FocusMate — Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">FocusMate</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="progress.html">Progress</a>
+      <a href="login.html" id="navLogin">Login</a>
+    </nav>
+  </header>
+
+  <main class="wrap small">
+    <div class="card login-card">
+      <h2 id="title">Account Login (Option B)</h2>
+      <div id="loginBox">
+        <input id="username" placeholder="Username" maxlength="30" />
+        <input id="password" type="password" placeholder="Password" maxlength="50" />
+        <div style="display:flex;gap:8px;margin-top:8px;">
+          <button class="btn" id="loginBtn">Login</button>
+          <button class="btn ghost" id="createBtn">Create Account</button>
+        </div>
+        <p style="font-size:13px;color:#666;margin-top:8px;">Note: Passwords are stored as secure hashes in your browser. You must login each session.</p>
+      </div>
+
+      <div id="welcomeBox" style="display:none;">
+        <p>Welcome, <strong id="displayName"></strong>!</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;">
+          <button class="btn" id="toProgress">Go to Progress</button>
+          <button class="btn ghost" id="logoutBtn">Logout</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>FocusMate • Secure local accounts</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
