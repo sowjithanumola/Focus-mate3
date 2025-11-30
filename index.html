@@ -6,7 +6,96 @@
   <title>FocusMate — Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<body><!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FocusMate — Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
+  <header class="nav">
+    <div class="brand">FocusMate</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="progress.html">Progress</a>
+      <a href="login.html" id="navLogin">Login</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <h1>FocusMate — Your Smart Daily Progress Partner</h1>
+      <p>Track your study sessions, record mistakes, and see monthly progress. Secure login with username + password (offline).</p>
+      <a class="btn" href="login.html">Get Started — Login</a>
+    </section>
+
+    <!-- FEATURES PREVIEW -->
+    <section class="features-preview">
+      <div class="card">
+        <h3>Daily Study Log</h3>
+        <p>Record subject, time spent, focus level, mistakes and your remark.</p>
+      </div>
+      <div class="card">
+        <h3>Password Login</h3>
+        <p>Create an account with username & password. Stored securely in your browser.</p>
+      </div>
+      <div class="card">
+        <h3>Offline Progress</h3>
+        <p>Monthly focus graph and history — all saved locally in your browser.</p>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+      <h2>Why FocusMate?</h2>
+      <p>Designed for students: simple, secure, and focused on steady improvement.</p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Made with ♥ for learners • FocusMate</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- 🌟 Chatbase AI Script -->
+  <script>
+    (function(){
+      if(!window.chatbase||window.chatbase("getState")!=="initialized"){
+        window.chatbase=(...arguments)=>{
+          if(!window.chatbase.q){window.chatbase.q=[]}
+          window.chatbase.q.push(arguments)
+        };
+        window.chatbase=new Proxy(window.chatbase,{
+          get(target,prop){
+            if(prop==="q"){return target.q}
+            return (...args)=>target(prop,...args)
+          }
+        })
+      }
+
+      const onLoad=function(){
+        const script=document.createElement("script");
+        script.src="https://www.chatbase.co/embed.min.js";
+        script.id="pcHZk-lkkqU2PAnCl11ZR";
+        script.domain="www.chatbase.co";
+        document.body.appendChild(script)
+      };
+
+      if(document.readyState==="complete"){onLoad()}
+      else{window.addEventListener("load",onLoad)}
+    })();
+  </script>
+  <!-- End Chatbase -->
+</body>
+</html>
+
   <header class="nav">
     <div class="brand">FocusMate</div>
     <nav>
