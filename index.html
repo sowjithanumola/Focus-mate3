@@ -52,38 +52,11 @@
 
   <footer class="footer">
     <p>Made with ♥ for learners • FocusMate</p>
+    <p style="font-size:0.8em; color:#888; text-align:center; margin-top:4px;">
+      AI features powered by Chatbase
+    </p>
   </footer>
 
   <script src="script.js"></script>
-
-  <!-- 🌟 Chatbase AI Script -->
-  <script>
-    (function(){
-      if(!window.chatbase||window.chatbase("getState")!=="initialized"){
-        window.chatbase=(...arguments)=>{
-          if(!window.chatbase.q){window.chatbase.q=[]}
-          window.chatbase.q.push(arguments)
-        };
-        window.chatbase=new Proxy(window.chatbase,{
-          get(target,prop){
-            if(prop==="q"){return target.q}
-            return (...args)=>target(prop,...args)
-          }
-        })
-      }
-
-      const onLoad=function(){
-        const script=document.createElement("script");
-        script.src="https://www.chatbase.co/embed.min.js";
-        script.id="pcHZk-lkkqU2PAnCl11ZR";
-        script.domain="www.chatbase.co";
-        document.body.appendChild(script)
-      };
-
-      if(document.readyState==="complete"){onLoad()}
-      else{window.addEventListener("load",onLoad)}
-    })();
-  </script>
-  <!-- End Chatbase -->
 </body>
 </html>
