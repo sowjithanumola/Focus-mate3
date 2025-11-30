@@ -18,12 +18,15 @@
   </header>
 
   <main class="wrap">
+
+    <!-- HERO SECTION -->
     <section class="hero">
       <h1>FocusMate — Your Smart Daily Progress Partner</h1>
       <p>Track your study sessions, record mistakes, and see monthly progress. Secure login with username + password (offline).</p>
       <a class="btn" href="login.html">Get Started — Login</a>
     </section>
 
+    <!-- FEATURES PREVIEW -->
     <section class="features-preview">
       <div class="card">
         <h3>Daily Study Log</h3>
@@ -39,10 +42,25 @@
       </div>
     </section>
 
+    <!-- ABOUT SECTION -->
     <section class="about">
       <h2>Why FocusMate?</h2>
       <p>Designed for students: simple, secure, and focused on steady improvement.</p>
     </section>
+
+    <!-- ⭐ AI ASSISTANT SECTION (iframe added) -->
+    <section class="ai-chat">
+      <h2>AI Study Assistant</h2>
+      <p>Ask anything — FocusMate AI will guide you with study tips, corrections, planning, and summaries.</p>
+
+      <iframe
+    src="https://www.chatbase.co/chatbot-iframe/pcHZk-lkkqU2PAnCl11ZR"
+    width="100%"
+    style="height: 100%; min-height: 700px"
+    frameborder="0"
+></iframe>
+    </section>
+
   </main>
 
   <footer class="footer">
@@ -50,20 +68,5 @@
   </footer>
 
   <script src="script.js"></script>
-
-  <!-- 🌟 Chatbase AI Bot Integration -->
-  <script>
-    window.chatbaseConfig = {
-      chatbotId: "YOUR_CHATBASE_BOT_ID"
-    };
-  </script>
-
-  <script 
-    src="https://www.chatbase.co/embed.min.js" 
-    id="YOUR_CHATBASE_BOT_ID"
-    defer>
-  </script>
-  <!-- End Chatbase -->
-
 </body>
 </html>
