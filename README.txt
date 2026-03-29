@@ -10,3 +10,4 @@ How to use:
 5. Export CSV to save or backup your data.
 
 Security note: Passwords are hashed with SHA-256 before storing in localStorage. This is an offline, browser-only system and is not intended for production authentication on the web.
+nothing more
